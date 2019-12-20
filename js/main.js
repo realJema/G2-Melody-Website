@@ -290,12 +290,13 @@ jQuery(document).ready(function($) {
 		  success: function(){
 			console.log('form submitted.');
 		},
-		error: function ( data ){
+		error: function ( response ){
 			console.log('form not submitted.');
 			console.log(transaction)
+			console.log(response)
 			if(transaction == 'album-purchase'){
 				// initiate album download here
-				downloadFile('images/G2Melody_Album.zip', 'G2Melody_Album');
+				downloadFile('images/G2Melody_Album2.zip', 'G2Melody_Album');
 				$('.modal-body').html('<p>Thank you for Downloading!</p>');
 			}
 			else if (transaction == 'donating') {
