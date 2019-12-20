@@ -278,7 +278,7 @@ body:after {
   width: 100%;
   border-bottom: rgba(255, 255, 255, 0.7); }
   .site-navbar:hover {
-    background: #fff; }
+    background: #343a40; }
   .site-navbar .site-logo {
     font-size: 1.5rem; }
     .site-navbar .site-logo a {
@@ -331,7 +331,7 @@ body:after {
         padding: 0px 0;
         margin-top: 20px;
         margin-left: 0px;
-        background: #fff;
+        background: #343a40;
         -webkit-transition: 0.2s 0s;
         -o-transition: 0.2s 0s;
         transition: 0.2s 0s; }
@@ -395,7 +395,7 @@ body:after {
   right: 0;
   z-index: 2000;
   padding-top: 20px;
-  background: #fff;
+  background: #343a40;
   height: calc(100vh);
   -webkit-transform: translateX(110%);
   -ms-transform: translateX(110%);
@@ -536,24 +536,24 @@ body:after {
     -o-transition: .3s all ease;
     transition: .3s all ease; }
   .sticky-wrapper .site-navbar .site-menu-toggle {
-    color: #000; }
+    color: white; }
   .sticky-wrapper .site-navbar .site-logo a {
-    color: #000; }
+    color: white; }
   .sticky-wrapper .site-navbar .site-menu > li > a {
-    color: rgba(0, 0, 0, 0.7) !important; }
+    color: white !important; }
     .sticky-wrapper .site-navbar .site-menu > li > a:hover, .sticky-wrapper .site-navbar .site-menu > li > a.active {
       color: #207561 !important; }
   .sticky-wrapper.is-sticky .site-navbar {
-    background: #fff;
+    background: #343a40;
     border-bottom: 1px solid transparent;
     -webkit-box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.1);
     box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.1); }
     .sticky-wrapper.is-sticky .site-navbar .site-menu-toggle {
-      color: #000; }
+      color: white; }
     .sticky-wrapper.is-sticky .site-navbar .site-logo a {
-      color: #000; }
+      color: white; }
     .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a {
-      color: #000 !important; }
+      color: white !important; }
       .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover, .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active {
         color: #207561 !important; }
   .sticky-wrapper .shrink {

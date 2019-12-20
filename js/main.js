@@ -279,4 +279,22 @@ jQuery(document).ready(function($) {
 	  return false;
 	});
 
+
+	$('#formmomo').submit(function(){
+		$.ajax({
+		  url: "https://developer.mtn.cm/OnlineMomoWeb/faces/transaction/transactionRequest.xhtml",
+		  type: 'GET',
+		  dataType: "jsonp",
+		  data : $('#formmomo').serialize(),
+		  success: function(){
+			console.log('form submitted.');
+			},
+			error: function ( data ){
+			console.log('form not submitted.');
+			//  alert(data);    do your stuff
+			}
+		});
+		return false;
+	});
+
 });
