@@ -279,9 +279,31 @@ jQuery(document).ready(function($) {
 	  return false;
 	});
 
+	$('.small-btn').on('click', function(){
+		// shows the number of the song to download
+		console.log('initial', $('#montant').val())
+		$('#montant').val(250); // change the amount to be for singles 250
+		$('#transaction-type').val('single-purchase'); // change the transaction type
+		$('#song-title').val($(this).attr('id')); // change the song to download
+		$('.descr').html('You are about to make a payment of <b>100frs</b>') //
+		console.log('after', $('#montant').val())
+
+	})
+
+	$('.play').on('click', function(){
+		// shows the number of the song to download
+		console.log('initial', $('#montant').val())
+		$('#montant').val(1500); // change the amount to be for album 1500
+		$('#transaction-type').val('album-purchase'); // change the transaction type
+		$('#song-title').val(0); // change the song to download
+		$('.descr').html('You are about to make a payment of <b>1500frs</b>') //
+		console.log('after', $('#montant').val())
+
+	})
 
 	$('#formmomo').submit(function(){
 		var transaction = $("#transaction-type").val();
+		var title = $("#song-title").val();
 		$.ajax({
 		  url: "https://developer.mtn.cm/OnlineMomoWeb/faces/transaction/transactionRequest.xhtml",
 		  type: 'GET',
@@ -296,12 +318,39 @@ jQuery(document).ready(function($) {
 			console.log(response)
 			if(transaction == 'album-purchase'){
 				// initiate album download here
+				alert('Thank you for Downloading!');
 				downloadFile('images/G2Melody_Album2.zip', 'G2Melody_Album');
-				$('.modal-body').html('<p>Thank you for Downloading!</p>');
 			}
 			else if (transaction == 'donating') {
-				$('.modal-body').html('<p>Thank you for Donating!</p>');
+				alert('Thank you for Donating!');
 			}
+			else if (transaction == 'single-purchase'){
+				alert('Thank you for Downloading!');
+				if (title == 1) {
+					// initiate album download here
+					downloadFile('images/G2Melody_Album/G 2____Love.mp3', 'G2Melody_Album');
+				}
+				else if(title == 2){
+					downloadFile('images/G2Melody_Album/G 2____Better_than_life.mp3', 'G2Melody_Album');
+				}
+				else if(title == 3){
+					downloadFile('images/G2Melody_Album/G 2____When We Pray.mp3', 'G2Melody_Album');
+				}
+				else if(title == 4){
+					downloadFile('images/G2Melody_Album/G 2____We Are Better Together.mp3', 'G2Melody_Album');
+				}
+				else if(title == 5){
+					downloadFile('images/G2Melody_Album/G 2____Nothing Without You.mp3', 'G2Melody_Album');
+				}
+				else if(title == 6 ){
+					downloadFile('images/G2Melody_Album/G 2____Haven of Rest_Love lifted me.mp3', 'G2Melody_Album');
+				}
+				else if(title == 7){
+					downloadFile('images/G2Melody_Album/G 2____We Need Peace.mp3', 'G2Melody_Album');
+				}
+				
+			}
+			$('#exampleModalCenter').modal('toggle');
 		}
 		});
 		return false;

@@ -133,7 +133,7 @@
                             <div class="album-details">
                                 <h2>
                                     <img src="images/cover2.jpg">G2 Melody</h2>
-                                <h1>Unfathomable Love</h1>
+                                <h2>Unfathomable Love</h2>
                                 <span>
                                     <span>Gospel Music
                                     </span>
@@ -146,32 +146,45 @@
                             <ol>
                                 <li>
                                     <span>Love</span>
-                                    <span>3:49</span>
+                                    <span>3:49
+                                    <div id="1" class="small-btn btn btn-primary" data-target="#exampleModalCenter" data-toggle="modal">Buy</div>
+                                    </span>
                                 </li>
                                 <li>
                                     <span>Better than Life </span>
                                     <span>3:33
+                                    <div id="2" class="small-btn btn btn-primary" data-target="#exampleModalCenter" data-toggle="modal">Buy</div>
                                     </span>
                                 </li>
                                 <li>
                                     <span>When we PRAY</span>
-                                    <span>3:47</span>
+                                    <span>3:47
+                                        <div id="3" class="small-btn btn btn-primary" data-target="#exampleModalCenter" data-toggle="modal">Buy</div>
+                                    </span>
                                 </li>
                                 <li>
                                     <span>We are better together </span>
-                                    <span>3:28</span>
+                                    <span>3:28
+                                        <div id="4" class="small-btn btn btn-primary" data-target="#exampleModalCenter" data-toggle="modal">Buy</div>
+                                    </span>
                                 </li>
                                 <li>
                                     <span>Nothing without YOU</span>
-                                    <span>3:35</span>
+                                    <span>3:35
+                                        <div id="5" class="small-btn btn btn-primary" data-target="#exampleModalCenter" data-toggle="modal">Buy</div>
+                                    </span>
                                 </li>
                                 <li>
                                     <span>Hymn: Haven of Rest/ Love Lifted Me</span>
-                                    <span>3:18</span>
+                                    <span>3:18
+                                        <div id="6" class="small-btn btn btn-primary" data-target="#exampleModalCenter" data-toggle="modal">Buy</div>
+                                    </span>
                                 </li>
                                 <li>
                                     <span>We need PEACE</span>
-                                    <span>3:24</span>
+                                    <span>3:24
+                                        <div id="7" class="small-btn btn btn-primary" data-target="#exampleModalCenter" data-toggle="modal">Buy</div>
+                                    </span>
                                 </li>
                             </ol>
                         </div>
@@ -180,35 +193,40 @@
             </section>
         </div>
     </body>
-</html></div><!-- Payment Modal --><div aria-hidden="true" aria-labelledby="exampleModalCenterTitle" class="modal fade" id="exampleModalCenter" role="dialog" tabindex="-1">
-<div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Thank you for Listening</h5>
-            <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-                <span aria-hidden="true">&times;</span>
-            </button>
+</html></div>
+<!-- Payment Modal -->
+    <div aria-hidden="true" aria-labelledby="exampleModalCenterTitle" class="modal fade" id="exampleModalCenter" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Thank you for Listening</h5>
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="descr">You are about to make a payment of
+                    <b>100frs</b>
+
+                </p>
+                <form id="formmomo" target="_top">
+                    <input autocomplete="off" name="idbouton" type="hidden" value="2">
+                    <input id="transaction-type" type="hidden" value="album-purchase">
+                    <input id="song-title" type="hidden" value="0">
+                    <input autocomplete="off" name="typebouton" type="hidden" value="PAIE">
+                    <input autocomplete="off" class="momo mount" id="montant" name="_amount" placeholder="" type="hidden" value="150">
+                    <input autocomplete="off" class="momo host" name="_tel"  placeholder="Phone number">
+                    <input autocomplete="off" class="momo pwd" name="_clP" placeholder="Please enter your password" type="hidden" value="">
+                    <input autocomplete="off" name="_email" type="hidden" value="ekwogeblaise.1@gmail.com">
+                    <input alt="OnloneMomo, le réflexe sécurité pour payer en ligne" autocomplete="off" border="0" id="Button_Image" name="submit" src="https://developer.mtn.cm/OnlineMomoWeb/console/uses/itg_img/buttons/MOMO_buy_now_EN.jpg" style="width : 250px; height: 100px;" type="image">
+                </form>
+
+            </div>
+
         </div>
-        <div class="modal-body">
-            <p>You are about to make a payment of
-                <b>100frs</b>
-
-            </p>
-            <form action="https://developer.mtn.cm/OnlineMomoWeb/faces/transaction/transactionRequest.xhtml" id="formmomo" method="GET" target="_top">
-                <input autocomplete="off" name="idbouton" type="hidden" value="2">
-                <input id="transaction-type" type="hidden" value="album-purchase">
-                <input autocomplete="off" name="typebouton" type="hidden" value="PAIE">
-                <input autocomplete="off" class="momo mount" id="montant" name="_amount" placeholder="" type="hidden" value="100">
-                <input autocomplete="off" class="momo host" name="_tel"  placeholder="Phone number">
-                <input autocomplete="off" class="momo pwd" name="_clP" placeholder="Please enter your password" type="hidden" value="">
-                <input autocomplete="off" name="_email" type="hidden" value="ekwogeblaise.1@gmail.com">
-                <input alt="OnloneMomo, le réflexe sécurité pour payer en ligne" autocomplete="off" border="0" id="Button_Image" name="submit" src="https://developer.mtn.cm/OnlineMomoWeb/console/uses/itg_img/buttons/MOMO_buy_now_EN.jpg" style="width : 250px; height: 100px;" type="image">
-            </form>
-
-        </div>
-
     </div>
-</div></div><section class="site-section bg-dark" id="contact-section">
+</div>
+><section class="site-section bg-dark" id="contact-section">
 <div class="container">
     <div class="row">
         <div class="col-12 mb-5 position-relative">
@@ -326,6 +344,4 @@
             </p>
         </div>
     </div>
-</div></footer></div><!-- .site-wrap --><script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/Filesaver.js"></script>
-<script src="js/jquery-ui.js"></script><script src="js/popper.min.js"></script><script src="js/bootstrap.min.js"></script><script src="js/owl.carousel.min.js"></script><script src="js/jquery.easing.1.3.js"></script><script src="js/aos.js"></script><script src="js/jquery.fancybox.min.js"></script><script src="js/jquery.sticky.js"></script><script src="js/isotope.pkgd.min.js"></script><script src="js/main.js"></script></body></html>
+</div></footer></div><!-- .site-wrap --><script src="js/jquery-3.3.1.min.js"></script><script src="js/jquery-ui.js"></script><script src="js/popper.min.js"></script><script src="js/bootstrap.min.js"></script><script src="js/owl.carousel.min.js"></script><script src="js/jquery.easing.1.3.js"></script><script src="js/aos.js"></script><script src="js/jquery.fancybox.min.js"></script><script src="js/jquery.sticky.js"></script><script src="js/isotope.pkgd.min.js"></script><script src="js/main.js"></script></body></html>
