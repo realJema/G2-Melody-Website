@@ -285,7 +285,7 @@ jQuery(document).ready(function($) {
 		$('#montant').val(250); // change the amount to be for singles 250
 		$('#transaction-type').val('single-purchase'); // change the transaction type
 		$('#song-title').val($(this).attr('id')); // change the song to download
-		$('.descr').html('You are about to make a payment of <b>100frs</b>') //
+		$('.descr').html('You are about to make a payment of <b>250frs</b>') //
 		console.log('after', $('#montant').val())
 
 	})
