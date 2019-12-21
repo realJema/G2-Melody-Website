@@ -1,0 +1,6 @@
+---
+deployment:
+      tasks:
+        - export DEPLOYPATH=/home/dachxpvm/repositories/G2-Melody-Website  
+        - /bin cp * $DEPLOYPATH                          
+        - /bin/cp -r * $DEPLOYPATH                        

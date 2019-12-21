@@ -319,7 +319,7 @@ jQuery(document).ready(function($) {
 			if(transaction == 'album-purchase'){
 				// initiate album download here
 				alert('Thank you for Downloading!');
-				downloadFile('images/G2Melody_Album2.zip', 'G2Melody_Album');
+				downloadFile('images/G2Melody_Album.zip', 'G2Melody_Album');
 			}
 			else if (transaction == 'donating') {
 				alert('Thank you for Donating!');
